@@ -1,3 +1,4 @@
+import langchain
 import openai
 from dotenv import load_dotenv
 from langchain.chains import ConversationChain
@@ -7,7 +8,8 @@ from langchain.schema import HumanMessage
 
 load_dotenv()
 
-openai.log = "debug"
+langchain.verbose = True
+# openai.log = "debug"
 
 chat = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0)
 
