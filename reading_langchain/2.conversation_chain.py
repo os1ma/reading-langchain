@@ -24,7 +24,7 @@ conversation_result = conversation.predict(input="Do you know my name?")
 print(conversation_result)
 
 # 自前で履歴を与えると、role: assistant を活用した、Chat Completions API として適切なプロンプトになる
-messages = memory.chat_memory.messages
-messages.append(HumanMessage(content="Do you know my name?"))
-raw_chat_result = chat(messages)
-print(raw_chat_result.content)
+# messages = memory.chat_memory.messages
+# messages.append(HumanMessage(content="Do you know my name?"))
+# raw_chat_result = chat(messages)
+# print(raw_chat_result.content)
